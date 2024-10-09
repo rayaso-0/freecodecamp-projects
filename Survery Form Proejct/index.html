@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="mainForm">
+        <div class="container">
+            <!-- Page Title -->
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please fill out the survey form below to help us improve our platform.</p>
+
+            <!-- Survey Form -->
+            <form id="survey-form">
+                <!-- Name Field -->
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+
+                <label id="number-label" for="number">Age:</label>
+                <input id="number" type="number" min="18" max="99" placeholder="Enter your age" required>
+                <p id="description">Must be between 18-99</p>
+
+                <label for="dropdown">What is your favorite feature?</label>
+                <select id="dropdown" required>
+                    <option value="">Select an option</option>
+                    <option value="usability">Usability</option>
+                    <option value="design">Design</option>
+                    <option value="performance">Performance</option>
+                </select>
+
+                <p>How do you rate our platform?</p>
+                <input type="radio" id="good" name="rating" value="good" required>
+                <label for="good">Good</label>
+                <input type="radio" id="average" name="rating" value="average">
+                <label for="average">Average</label>
+                <input type="radio" id="poor" name="rating" value="poor">
+                <label for="poor">Poor</label>
+
+                <p>Select the areas you think need improvement:</p>
+                <input type="checkbox" id="design" name="improvement" value="design">
+                <label for="design">Design</label>
+                <input type="checkbox" id="performance" name="improvement" value="performance">
+                <label for="performance">Performance</label>
+                <input type="checkbox" id="usability" name="improvement" value="usability">
+                <label for="usability">Usability</label>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" rows="4" placeholder="Leave your comments here..."></textarea>
+
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
